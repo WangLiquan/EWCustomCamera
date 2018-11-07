@@ -7,12 +7,12 @@
 //
 
 import UIKit
-/// 裁切后的照片返回协议
-@objc public protocol EWImageCropperDelegate : NSObjectProtocol {
-    func imageCropper(_ cropperViewController:EWPhotoShowViewController, didFinished editImg:UIImage)
+/// 预览后照片返回协议
+@objc public protocol EWPhotoFinishDelegate : NSObjectProtocol {
+    func photo(_ viewController: EWPhotoShowViewController, didFinished photo: UIImage)
 }
 open class EWPhotoShowViewController: UIViewController {
-    public var delegate: EWImageCropperDelegate?
+    public var delegate: EWPhotoFinishDelegate?
     public let photoShowImageView: UIImageView = {
         let imageView = UIImageView(frame: UIScreen.main.bounds)
         imageView.contentMode = .center
@@ -28,8 +28,8 @@ open class EWPhotoShowViewController: UIViewController {
     
     @objc private func onClickCompleteButton(){
         if delegate != nil{
-            if self.delegate!.responds(to: #selector(EWImageCropperDelegate.imageCropper(_:didFinished:))) {
-                self.delegate!.imageCropper(self, didFinished: self.photoShowImageView.image!)
+            if self.delegate!.responds(to: #selector(EWPhotoFinishDelegate.photo(_:didFinished:))) {
+                self.delegate!.photo(self, didFinished: self.photoShowImageView.image!)
             }
         }
     }

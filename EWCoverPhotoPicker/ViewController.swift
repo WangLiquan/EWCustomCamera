@@ -41,10 +41,11 @@ class ViewController: UIViewController {
 
 }
 
-extension ViewController: EWImageCropperDelegate{
-    func imageCropper(_ cropperViewController: EWPhotoShowViewController, didFinished editImg: UIImage) {
-        cropperViewController.navigationController?.dismiss(animated: true, completion: {
-            self.showImageView.image = editImg
+extension ViewController: EWPhotoFinishDelegate{
+    func photo(_ viewController: EWPhotoShowViewController, didFinished photo: UIImage) {
+        viewController.navigationController?.dismiss(animated: true, completion: {
+            self.showImageView.image = photo
         })
     }
+
 }
