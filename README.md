@@ -12,4 +12,4 @@
 5. 使用protocol实现相片回调.
    
 
-![效果图预览](https://github.com/WangLiquan/EWCustomCoverCemara/raw/master/images/demonstration.gif)
+![效果图预览](https://github.com/WangLiquan/EWCoverPhotoPicker/raw/master/images/demonstration.gif)
