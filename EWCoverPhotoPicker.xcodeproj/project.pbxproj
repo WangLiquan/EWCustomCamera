@@ -1,0 +1,601 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		798C790E21927D9B0097C5D6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 798C790D21927D9B0097C5D6 /* AppDelegate.swift */; };
+		798C791021927D9B0097C5D6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 798C790F21927D9B0097C5D6 /* ViewController.swift */; };
+		798C791321927D9B0097C5D6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 798C791121927D9B0097C5D6 /* Main.storyboard */; };
+		798C791521927DA90097C5D6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 798C791421927DA90097C5D6 /* Assets.xcassets */; };
+		798C791821927DA90097C5D6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 798C791621927DA90097C5D6 /* LaunchScreen.storyboard */; };
+		798C792321927DAA0097C5D6 /* EWCoverPhotoPickerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 798C792221927DAA0097C5D6 /* EWCoverPhotoPickerTests.swift */; };
+		798C792E21927DAA0097C5D6 /* EWCoverPhotoPickerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 798C792D21927DAA0097C5D6 /* EWCoverPhotoPickerUITests.swift */; };
+		798C793C21927E490097C5D6 /* EWPhotoPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 798C793B21927E490097C5D6 /* EWPhotoPickerViewController.swift */; };
+		798C793E2192ADE70097C5D6 /* EWPhotoShowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 798C793D2192ADE70097C5D6 /* EWPhotoShowViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		798C791F21927DAA0097C5D6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 798C790221927D9A0097C5D6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 798C790921927D9A0097C5D6;
+			remoteInfo = EWCoverPhotoPicker;
+		};
+		798C792A21927DAA0097C5D6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 798C790221927D9A0097C5D6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 798C790921927D9A0097C5D6;
+			remoteInfo = EWCoverPhotoPicker;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		798C790A21927D9A0097C5D6 /* EWCoverPhotoPicker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EWCoverPhotoPicker.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		798C790D21927D9B0097C5D6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		798C790F21927D9B0097C5D6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		798C791221927D9B0097C5D6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		798C791421927DA90097C5D6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		798C791721927DA90097C5D6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		798C791921927DA90097C5D6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		798C791E21927DAA0097C5D6 /* EWCoverPhotoPickerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EWCoverPhotoPickerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		798C792221927DAA0097C5D6 /* EWCoverPhotoPickerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EWCoverPhotoPickerTests.swift; sourceTree = "<group>"; };
+		798C792421927DAA0097C5D6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		798C792921927DAA0097C5D6 /* EWCoverPhotoPickerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EWCoverPhotoPickerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		798C792D21927DAA0097C5D6 /* EWCoverPhotoPickerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EWCoverPhotoPickerUITests.swift; sourceTree = "<group>"; };
+		798C792F21927DAA0097C5D6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		798C793B21927E490097C5D6 /* EWPhotoPickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EWPhotoPickerViewController.swift; sourceTree = "<group>"; };
+		798C793D2192ADE70097C5D6 /* EWPhotoShowViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EWPhotoShowViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		798C790721927D9A0097C5D6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		798C791B21927DAA0097C5D6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		798C792621927DAA0097C5D6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		798C790121927D9A0097C5D6 = {
+			isa = PBXGroup;
+			children = (
+				798C790C21927D9A0097C5D6 /* EWCoverPhotoPicker */,
+				798C792121927DAA0097C5D6 /* EWCoverPhotoPickerTests */,
+				798C792C21927DAA0097C5D6 /* EWCoverPhotoPickerUITests */,
+				798C790B21927D9A0097C5D6 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		798C790B21927D9A0097C5D6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				798C790A21927D9A0097C5D6 /* EWCoverPhotoPicker.app */,
+				798C791E21927DAA0097C5D6 /* EWCoverPhotoPickerTests.xctest */,
+				798C792921927DAA0097C5D6 /* EWCoverPhotoPickerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		798C790C21927D9A0097C5D6 /* EWCoverPhotoPicker */ = {
+			isa = PBXGroup;
+			children = (
+				798C790D21927D9B0097C5D6 /* AppDelegate.swift */,
+				798C790F21927D9B0097C5D6 /* ViewController.swift */,
+				798C793B21927E490097C5D6 /* EWPhotoPickerViewController.swift */,
+				798C793D2192ADE70097C5D6 /* EWPhotoShowViewController.swift */,
+				798C791121927D9B0097C5D6 /* Main.storyboard */,
+				798C791421927DA90097C5D6 /* Assets.xcassets */,
+				798C791621927DA90097C5D6 /* LaunchScreen.storyboard */,
+				798C791921927DA90097C5D6 /* Info.plist */,
+			);
+			path = EWCoverPhotoPicker;
+			sourceTree = "<group>";
+		};
+		798C792121927DAA0097C5D6 /* EWCoverPhotoPickerTests */ = {
+			isa = PBXGroup;
+			children = (
+				798C792221927DAA0097C5D6 /* EWCoverPhotoPickerTests.swift */,
+				798C792421927DAA0097C5D6 /* Info.plist */,
+			);
+			path = EWCoverPhotoPickerTests;
+			sourceTree = "<group>";
+		};
+		798C792C21927DAA0097C5D6 /* EWCoverPhotoPickerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				798C792D21927DAA0097C5D6 /* EWCoverPhotoPickerUITests.swift */,
+				798C792F21927DAA0097C5D6 /* Info.plist */,
+			);
+			path = EWCoverPhotoPickerUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		798C790921927D9A0097C5D6 /* EWCoverPhotoPicker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 798C793221927DAA0097C5D6 /* Build configuration list for PBXNativeTarget "EWCoverPhotoPicker" */;
+			buildPhases = (
+				798C790621927D9A0097C5D6 /* Sources */,
+				798C790721927D9A0097C5D6 /* Frameworks */,
+				798C790821927D9A0097C5D6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = EWCoverPhotoPicker;
+			productName = EWCoverPhotoPicker;
+			productReference = 798C790A21927D9A0097C5D6 /* EWCoverPhotoPicker.app */;
+			productType = "com.apple.product-type.application";
+		};
+		798C791D21927DAA0097C5D6 /* EWCoverPhotoPickerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 798C793521927DAA0097C5D6 /* Build configuration list for PBXNativeTarget "EWCoverPhotoPickerTests" */;
+			buildPhases = (
+				798C791A21927DAA0097C5D6 /* Sources */,
+				798C791B21927DAA0097C5D6 /* Frameworks */,
+				798C791C21927DAA0097C5D6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				798C792021927DAA0097C5D6 /* PBXTargetDependency */,
+			);
+			name = EWCoverPhotoPickerTests;
+			productName = EWCoverPhotoPickerTests;
+			productReference = 798C791E21927DAA0097C5D6 /* EWCoverPhotoPickerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		798C792821927DAA0097C5D6 /* EWCoverPhotoPickerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 798C793821927DAA0097C5D6 /* Build configuration list for PBXNativeTarget "EWCoverPhotoPickerUITests" */;
+			buildPhases = (
+				798C792521927DAA0097C5D6 /* Sources */,
+				798C792621927DAA0097C5D6 /* Frameworks */,
+				798C792721927DAA0097C5D6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				798C792B21927DAA0097C5D6 /* PBXTargetDependency */,
+			);
+			name = EWCoverPhotoPickerUITests;
+			productName = EWCoverPhotoPickerUITests;
+			productReference = 798C792921927DAA0097C5D6 /* EWCoverPhotoPickerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		798C790221927D9A0097C5D6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = Ethan;
+				TargetAttributes = {
+					798C790921927D9A0097C5D6 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					798C791D21927DAA0097C5D6 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 798C790921927D9A0097C5D6;
+					};
+					798C792821927DAA0097C5D6 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 798C790921927D9A0097C5D6;
+					};
+				};
+			};
+			buildConfigurationList = 798C790521927D9A0097C5D6 /* Build configuration list for PBXProject "EWCoverPhotoPicker" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 798C790121927D9A0097C5D6;
+			productRefGroup = 798C790B21927D9A0097C5D6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				798C790921927D9A0097C5D6 /* EWCoverPhotoPicker */,
+				798C791D21927DAA0097C5D6 /* EWCoverPhotoPickerTests */,
+				798C792821927DAA0097C5D6 /* EWCoverPhotoPickerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		798C790821927D9A0097C5D6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				798C791821927DA90097C5D6 /* LaunchScreen.storyboard in Resources */,
+				798C791521927DA90097C5D6 /* Assets.xcassets in Resources */,
+				798C791321927D9B0097C5D6 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		798C791C21927DAA0097C5D6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		798C792721927DAA0097C5D6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		798C790621927D9A0097C5D6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				798C793E2192ADE70097C5D6 /* EWPhotoShowViewController.swift in Sources */,
+				798C791021927D9B0097C5D6 /* ViewController.swift in Sources */,
+				798C790E21927D9B0097C5D6 /* AppDelegate.swift in Sources */,
+				798C793C21927E490097C5D6 /* EWPhotoPickerViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		798C791A21927DAA0097C5D6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				798C792321927DAA0097C5D6 /* EWCoverPhotoPickerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		798C792521927DAA0097C5D6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				798C792E21927DAA0097C5D6 /* EWCoverPhotoPickerUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		798C792021927DAA0097C5D6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 798C790921927D9A0097C5D6 /* EWCoverPhotoPicker */;
+			targetProxy = 798C791F21927DAA0097C5D6 /* PBXContainerItemProxy */;
+		};
+		798C792B21927DAA0097C5D6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 798C790921927D9A0097C5D6 /* EWCoverPhotoPicker */;
+			targetProxy = 798C792A21927DAA0097C5D6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		798C791121927D9B0097C5D6 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				798C791221927D9B0097C5D6 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		798C791621927DA90097C5D6 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				798C791721927DA90097C5D6 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		798C793021927DAA0097C5D6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		798C793121927DAA0097C5D6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		798C793321927DAA0097C5D6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = B8V4DCL3BF;
+				INFOPLIST_FILE = EWCoverPhotoPicker/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.Ethan.EWCoverPhotoPicker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		798C793421927DAA0097C5D6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = B8V4DCL3BF;
+				INFOPLIST_FILE = EWCoverPhotoPicker/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.Ethan.EWCoverPhotoPicker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		798C793621927DAA0097C5D6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = B8V4DCL3BF;
+				INFOPLIST_FILE = EWCoverPhotoPickerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.Ethan.EWCoverPhotoPickerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EWCoverPhotoPicker.app/EWCoverPhotoPicker";
+			};
+			name = Debug;
+		};
+		798C793721927DAA0097C5D6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = B8V4DCL3BF;
+				INFOPLIST_FILE = EWCoverPhotoPickerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.Ethan.EWCoverPhotoPickerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EWCoverPhotoPicker.app/EWCoverPhotoPicker";
+			};
+			name = Release;
+		};
+		798C793921927DAA0097C5D6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = B8V4DCL3BF;
+				INFOPLIST_FILE = EWCoverPhotoPickerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.Ethan.EWCoverPhotoPickerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = EWCoverPhotoPicker;
+			};
+			name = Debug;
+		};
+		798C793A21927DAA0097C5D6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = B8V4DCL3BF;
+				INFOPLIST_FILE = EWCoverPhotoPickerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.Ethan.EWCoverPhotoPickerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = EWCoverPhotoPicker;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		798C790521927D9A0097C5D6 /* Build configuration list for PBXProject "EWCoverPhotoPicker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				798C793021927DAA0097C5D6 /* Debug */,
+				798C793121927DAA0097C5D6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		798C793221927DAA0097C5D6 /* Build configuration list for PBXNativeTarget "EWCoverPhotoPicker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				798C793321927DAA0097C5D6 /* Debug */,
+				798C793421927DAA0097C5D6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		798C793521927DAA0097C5D6 /* Build configuration list for PBXNativeTarget "EWCoverPhotoPickerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				798C793621927DAA0097C5D6 /* Debug */,
+				798C793721927DAA0097C5D6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		798C793821927DAA0097C5D6 /* Build configuration list for PBXNativeTarget "EWCoverPhotoPickerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				798C793921927DAA0097C5D6 /* Debug */,
+				798C793A21927DAA0097C5D6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 798C790221927D9A0097C5D6 /* Project object */;
+}
