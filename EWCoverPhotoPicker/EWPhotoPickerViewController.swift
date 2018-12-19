@@ -13,8 +13,6 @@ class EWPhotoPickerViewController: UIViewController  {
     public var delegate: EWPhotoFinishDelegate? ///结束回调代理
     /// AVCaptureSession是AVFoundation的核心类,用于捕捉视频和音频,协调视频和音频的输入和输出流.
     private let captureSession = AVCaptureSession()
-    /// AVCaptureVideoPreviewLayer,这是摄像头的视频预览层.
-    private var previewLayer:AVCaptureVideoPreviewLayer!
     /// 镜头采集
     private var captureDevice:AVCaptureDevice!
     /// 拍照状态,在相机调用时AVCaptureVideoDataOutputSampleBufferDelegate代理方法在不停调用,所以我们可以通过修改拍照状态bool值来执行拍照动作
@@ -91,11 +89,10 @@ class EWPhotoPickerViewController: UIViewController  {
         }
         /// 设定视频预览层,也就是相机预览layer
         let previewLayer = AVCaptureVideoPreviewLayer(session: captureSession)
-        self.previewLayer = previewLayer
-        self.view.layer.addSublayer(self.previewLayer)
-        self.previewLayer.frame = self.view.layer.frame
+        self.view.layer.addSublayer(previewLayer)
+        previewLayer.frame = self.view.layer.frame
         /// 相机页面展现形式
-        self.previewLayer.videoGravity = AVLayerVideoGravity.resizeAspectFill /// 拉伸充满frame
+        previewLayer.videoGravity = AVLayerVideoGravity.resizeAspectFill /// 拉伸充满frame
         /// 设定输出流
         let dataOutput = AVCaptureVideoDataOutput()
         /// 指定像素格式
