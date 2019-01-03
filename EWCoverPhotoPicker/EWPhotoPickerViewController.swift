@@ -117,7 +117,7 @@ class EWPhotoPickerViewController: UIViewController  {
             let context = CIContext()
             let imageRect = CGRect(x: 0, y: 0, width: CVPixelBufferGetWidth(pixelBuffer), height: CVPixelBufferGetHeight(pixelBuffer))
             if let image = context.createCGImage(ciImage, from: imageRect) {
-                return UIImage(cgImage: image, scale: UIScreen.main.scale, orientation: .leftMirrored)
+                return UIImage(cgImage: image, scale: UIScreen.main.scale, orientation: .up)
             }
         }
         return nil
