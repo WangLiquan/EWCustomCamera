@@ -99,6 +99,9 @@ class EWPhotoPickerViewController: UIViewController  {
         dataOutput.videoSettings = [(kCVPixelBufferPixelFormatTypeKey as NSString):NSNumber(value:kCVPixelFormatType_32BGRA)] as [String : Any]
         /// 是否直接丢弃处理旧帧时捕获的新帧,默认为True,如果改为false会大幅提高内存使用
         dataOutput.alwaysDiscardsLateVideoFrames = true
+        /// 开新线程进行输出流代理方法调用
+        let queue = DispatchQueue(label: "com.brianadvent.captureQueue")
+        dataOutput.setSampleBufferDelegate(self, queue: queue)
         /// 将输出流加入session
         if captureSession.canAddOutput(dataOutput) {
             captureSession.addOutput(dataOutput)
@@ -106,9 +109,7 @@ class EWPhotoPickerViewController: UIViewController  {
         /// beginConfiguration()和commitConfiguration()方法中的修改将在commit时同时提交
         captureSession.commitConfiguration()
         captureSession.startRunning()
-        /// 开新线程进行输出流代理方法调用
-        let queue = DispatchQueue(label: "com.brianadvent.captureQueue")
-        dataOutput.setSampleBufferDelegate(self, queue: queue)
+
     }
     /// 根据CMSampleBuffer媒体文件获取相片
     private func getImageFromSampleBuffer (buffer:CMSampleBuffer) -> UIImage? {
