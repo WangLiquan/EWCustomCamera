@@ -9,8 +9,8 @@
 import UIKit
 import AVFoundation
 
-class EWPhotoPickerViewController: UIViewController  {
-    public var delegate: EWPhotoFinishDelegate? ///结束回调代理
+class EWPhotoPickerViewController: UIViewController {
+    public weak var delegate: EWPhotoFinishDelegate? ///结束回调代理
     /// AVCaptureSession是AVFoundation的核心类,用于捕捉视频和音频,协调视频和音频的输入和输出流.
     private let captureSession = AVCaptureSession()
     /// 镜头采集
@@ -84,7 +84,7 @@ class EWPhotoPickerViewController: UIViewController  {
             /// 将前置摄像头作为session的input输入流
             let captureDeviceInput = try AVCaptureDeviceInput(device: captureDevice)
             captureSession.addInput(captureDeviceInput)
-        }catch {
+        } catch {
             print(error.localizedDescription)
         }
         /// 设定视频预览层,也就是相机预览layer
@@ -136,7 +136,7 @@ class EWPhotoPickerViewController: UIViewController  {
 
 }
 /// 相册输出流代理
-extension EWPhotoPickerViewController: AVCaptureVideoDataOutputSampleBufferDelegate{
+extension EWPhotoPickerViewController: AVCaptureVideoDataOutputSampleBufferDelegate {
     /// 输出流代理方法,实时调用
     func captureOutput(_ output: AVCaptureOutput, didOutput sampleBuffer: CMSampleBuffer, from connection: AVCaptureConnection) {
         /// 判断takePhoto状态,如果为True代表执行拍照动作

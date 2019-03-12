@@ -25,7 +25,6 @@ class ViewController: UIViewController {
         return imageView
     }()
 
-
     override func viewDidLoad() {
         super.viewDidLoad()
         self.view.addSubview(takePhotoButton)
@@ -33,7 +32,7 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
     }
 
-    @objc func onClickTakePhotoButton(){
+    @objc func onClickTakePhotoButton() {
         let vc = EWPhotoPickerViewController()
         vc.delegate = self
         self.present(UINavigationController(rootViewController: vc), animated: true, completion: nil)
@@ -41,7 +40,7 @@ class ViewController: UIViewController {
 
 }
 
-extension ViewController: EWPhotoFinishDelegate{
+extension ViewController: EWPhotoFinishDelegate {
     func photo(_ viewController: EWPhotoShowViewController, didFinished photo: UIImage) {
         viewController.navigationController?.dismiss(animated: true, completion: {
             self.showImageView.image = photo

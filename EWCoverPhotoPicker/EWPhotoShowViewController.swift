@@ -12,7 +12,7 @@ import UIKit
     func photo(_ viewController: EWPhotoShowViewController, didFinished photo: UIImage)
 }
 open class EWPhotoShowViewController: UIViewController {
-    public var delegate: EWPhotoFinishDelegate?
+    public weak var delegate: EWPhotoFinishDelegate?
     public let photoShowImageView: UIImageView = {
         let imageView = UIImageView(frame: UIScreen.main.bounds)
         imageView.contentMode = .center
@@ -25,9 +25,9 @@ open class EWPhotoShowViewController: UIViewController {
         self.view.backgroundColor = UIColor.black
         self.navigationItem.rightBarButtonItem = UIBarButtonItem(title: "完成", style: .plain, target: self, action: #selector(onClickCompleteButton))
     }
-    
-    @objc private func onClickCompleteButton(){
-        if delegate != nil{
+
+    @objc private func onClickCompleteButton() {
+        if delegate != nil {
             if self.delegate!.responds(to: #selector(EWPhotoFinishDelegate.photo(_:didFinished:))) {
                 self.delegate!.photo(self, didFinished: self.photoShowImageView.image!)
             }
