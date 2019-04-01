@@ -1,7 +1,7 @@
 # EWCustomCoverCemara
+[![996.icu](https://img.shields.io/badge/link-996.icu-red.svg)](https://996.icu)
 
 一个带自定制蒙层的前置相机.
----
 
 # 实现思路:
 
